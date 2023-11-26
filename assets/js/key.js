@@ -4,7 +4,7 @@ const agregaDiv = (color) => {
   let nuevoDiv = document.createElement("div");
   nuevoDiv.style.width = "200px";
   nuevoDiv.style.height = "200px";
-  nuevoDiv.style.backgroundColor = "color";
+  nuevoDiv.style.backgroundColor = color;
   nuevoDiv.style.border = "3px black";
   document.body.appendChild(nuevoDiv);
 };
@@ -17,10 +17,10 @@ document.addEventListener("keydown", (event) => {
   } else if (event.key === "d" || event.key === "D") {
     key.style.backgroundColor = "skyblue";
   } else if (event.key === "q" || event.key === "Q") {
-    key.style.backgroundColor = "purple";
+    agregaDiv('purple');
   } else if (event.key === "w" || event.key === "W") {
-    key.style.backgroundColor = "gray";
+    agregaDiv('gray');
   } else if (event.key === "e" || event.key === "E") {
-    key.style.backgroundColor = "brown";
+    agregaDiv('brown');
   }
 });
